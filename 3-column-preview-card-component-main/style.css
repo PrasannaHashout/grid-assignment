@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+:root{
+      --bright-orange: hsl(31, 77%, 52%);
+      --dark-cyan: hsl(184, 100%, 22%);
+      --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+.container {
+      width: 90%;
+      margin:0 auto;
+      margin-top: 120px;
+      display: grid;
+      grid-template-columns: repeat(3, 300px);
+      justify-content: center;
+}
+
+.card1{
+      background-color: var(--bright-orange);
+      border-radius: 5px 0 0 5px;
+      padding: 45px;
+}
+
+.card2{
+      background-color: var(--dark-cyan);
+      border-radius: 0;
+      padding: 45px;
+}
+
+.card3{
+      background-color: var(--very-dark-cyan);
+      border-radius: 0 5px 5px 0;
+      padding: 45px;
+}
+
+.heading{
+      color:hsl(0, 0%, 95%);
+      font-family: "Big Shoulders Display", sans-serif;
+      text-transform: uppercase;
+}
+
+.car-description{
+      margin-top: 15%;
+      color:  hsla(0, 0%, 100%, 0.75);
+      font-size: 15px;
+      font-family: "Lexend Deca", sans-serif;
+      line-height: 24px;
+      padding-bottom: 40px;
+}
+
+.buttons{
+      background-color: hsl(0, 0%, 95%);
+      border-color: transparent;
+      border-radius: 25px;
+      font-family: 'Lexend Deca', sans-serif;
+      width: 60%;
+      text-transform: capitalize;
+}
+
+.card1 .buttons p{
+      color: var(--bright-orange);
+      font-weight: 700;
+}
+
+.card2 .buttons p{
+      color: var(--dark-cyan);
+      font-weight: 700;
+}
+
+.card3 .buttons p{
+      color: var(--very-dark-cyan);
+      font-weight: 700;
+}
+
+@media (max-width:400px){
+      .container {
+            width: 50%;
+            margin:40px auto;
+            display: grid;
+            width: 100%;
+            grid-template-columns:320px;
+            justify-content: center;
+      }
+
+      .card1{
+            border-radius: 5px 5px 0 0;
+      }
+
+      .card3{
+            border-radius: 0 0 5px 5px;
+      }
+
+      .car-description{
+            padding-bottom: 20px;
+      }
+}
+
+@media (max-width:700px){
+      .container {
+            width: 50%;
+            margin:40px auto;
+            display: grid;
+            width: 100%;
+            grid-template-columns:320px;
+            justify-content: center;
+      }
+
+      .card1{
+            border-radius: 5px 5px 0 0;
+      }
+
+      .card3{
+            border-radius: 0 0 5px 5px;
+      }
+
+      .car-description{
+            padding-bottom: 20px;
+      }
+}
